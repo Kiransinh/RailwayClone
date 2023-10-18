@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 19, 17, 28;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --background: 19, 17, 28;
+  --blue-track: linear-gradient(
+    0deg,
+    rgb(255 255 255/0) 0%,
+    hsla(220, 62%, 25%, 0.5) 15%,
+    hsla(220, 62%, 25%, 0.5) 85%,
+    rgb(255 255 255/0) 100%
+  );
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  /* background-color: #13111c; */
+  background: linear-gradient(
+    90deg,
+    rgba(252, 252, 252, 1) 0%,
+    rgba(19, 17, 28, 1) 0%,
+    rgba(44, 15, 48, 1) 100%
+  );
+}
+
+.navbbg {
+  background: linear-gradient(
+    90deg,
+    rgba(252, 252, 252, 1) 0%,
+    rgba(19, 17, 28, 1) 0%,
+    rgba(44, 15, 48, 1) 100%
+  );
+}
+.text-huge {
+  font-size: clamp(48px, 6vw, 60px);
+  color: #fff;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.text-small {
+  font-size: 20px;
+  line-height: 1.25;
+  color: grey;
+}
+.intialblock-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(252, 252, 252, 1) 0%,
+    rgba(19, 17, 28, 1) 0%,
+    rgba(44, 15, 48, 1) 100%
+  );
+}
+.str-prject-btn {
+  color: white;
+  background-image: linear-gradient(76.35deg, #801ae6 15.89%, #a21ae6 89.75%);
+}
+.btrack {
+  background: var(--blue-track);
+}
+.st-shadow {
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+}
